@@ -26,4 +26,5 @@ Social Guy is which can give you Covid-19 stats and news of whole world.
 ## » Want to contribute
 
 Contribute on Patreon
+
 Go Here - https://patreon.com/ashutoshswamy
