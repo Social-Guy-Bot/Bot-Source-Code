@@ -23,6 +23,9 @@ Social Guy is which can give you Covid-19 stats and news of whole world.
 | \_support                         | Gives you a link to join Social Guy's Support Server |
 | \_website                         | Gives you a link to go to Social Guy's website       |
 
+## » Example
+<img src="https://i.ibb.co/NL3MjZn/Example1.png">
+
 ## » Want to contribute
 
 Contribute on Patreon
