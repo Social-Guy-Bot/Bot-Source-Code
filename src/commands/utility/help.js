@@ -10,6 +10,7 @@ module.exports.run = async (client, message, args) => {
       "These are all my help modules, if you want detailed info on each command type `_website` command"
     )
     .addField("Stats :bar_chart:", "`_help stats`", true)
+    .addField("Info :information_source:", "`_help info`", true)
     .addField("Utility :gear:", "`_help utility`", true)
     .setFooter({
       text: "Use _ prefix before every command",
@@ -22,6 +23,15 @@ module.exports.run = async (client, message, args) => {
     .setDescription(
       "`worldstats`, `countrystats`, `continentstats`, `headlines`"
     )
+    .setFooter({
+      text: "Use _ prefix before every command",
+    })
+    .setTimestamp();
+
+  const infoEmbed = new discord.MessageEmbed()
+    .setColor("#F773D9")
+    .setTitle("Info commands")
+    .setDescription("`symptoms`")
     .setFooter({
       text: "Use _ prefix before every command",
     })
@@ -46,6 +56,10 @@ module.exports.run = async (client, message, args) => {
     message.reply({
       embeds: [statsEmbed],
     });
+  } else if (topic.toLowerCase() === "info") {
+    message.reply({
+      embeds: [infoEmbed],
+    });
   } else if (topic.toLowerCase() === "utility") {
     message.reply({
       embeds: [utilityEmbed],
@@ -53,7 +67,7 @@ module.exports.run = async (client, message, args) => {
   } else {
     message.reply({
       content:
-        "This help module doesn't exist.\nModules which exist are - `stats and utility`",
+        "This help module doesn't exist.\nModules which exist are - `stats, info and utility`",
     });
   }
 };
